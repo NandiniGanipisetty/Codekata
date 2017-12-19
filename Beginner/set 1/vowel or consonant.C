@@ -8,7 +8,7 @@ int main() {
     }
     else
     {
-        printf("consonent");
+        printf("consonant");
     }
  return 0;
 }
