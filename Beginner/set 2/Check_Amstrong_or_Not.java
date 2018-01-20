@@ -16,11 +16,11 @@ public class Amstrong {
 		}
 		if(temp==a)
 		{
-			System.out.println("amstrong number");
+			System.out.println("yes");
 		}
 		else
 		{
-			System.out.println("not a amstrong number");
+			System.out.println("no");
 		}
 
 	}
