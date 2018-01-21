@@ -1,12 +1,9 @@
-package sentense_case;
-
 import java.util.Scanner;
 
-public class ReverseNumber {
-	
-    public static void main(String[] args) 
-    {
-    	int num,digit,temp,i,a,b,count=0;
+public class Amstrong {
+
+	public static void main(String[] args) {
+		int num,digit,temp,i,a,b,count=0;
     	Scanner sc=new Scanner(System.in);
     	System.out.println("enter the first interval:");
     	a=sc.nextInt();
@@ -33,5 +30,7 @@ public class ReverseNumber {
     	{
     		System.out.println("no amstrong numbers between this intervals");
     		}
-    }
+
+	}
+
 }
