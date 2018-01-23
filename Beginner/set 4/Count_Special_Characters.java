@@ -22,7 +22,7 @@ public class Count_Special_char {
 	}
 
 	public static void main(String[] args) {
-		fun("!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~");
+		fun(" !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~");
 		
 
 	}
