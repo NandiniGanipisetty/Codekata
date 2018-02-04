@@ -3,18 +3,15 @@ import java.util.Scanner;
 public class Capitalize {
 
 	public static void main(String[] args) {
-		String str;
-		int i;
+		String str,capital="";
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter the string:");
 		str=sc.nextLine();
 		String[] array=str.split(" ");
-		String capital="";
-		for(String w:array)
+		for(int i=0;i<array.length;i++)
 		{
-			String first=w.substring(0, 1).toUpperCase();
-			String last=w.substring(1);
-			capital+=first+last+" ";
+			capital=capital+array[i].substring(0, 1).toUpperCase()+array[i].substring(1)+" ";
+		
 		}
 		System.out.println(capital);
 
