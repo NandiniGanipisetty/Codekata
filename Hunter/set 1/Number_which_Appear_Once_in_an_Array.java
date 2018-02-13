@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Non_Repeat {
 
 	public static void main(String[] args) {
-		int N,i,j,temp = 0;
+		int N,i,result=0;
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter the size:");
 		N=sc.nextInt();
@@ -15,18 +15,11 @@ public class Non_Repeat {
 		{
 			array[i]=sc.nextInt();
 		}
-		for(i=0;i<N;i++)
+		for(int a:array)
 		{
-			for(j=i+1;j<N;j++)
-			{
-				if(array[i]!=array[j])
-				{
-					temp=i;
-				}
-			}
+			result=result^a;
 		}
-		System.out.println(temp);
-
+		System.out.println(result);
 	}
 
 }
