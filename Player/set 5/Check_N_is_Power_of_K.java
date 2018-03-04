@@ -10,17 +10,19 @@ public class Check_Power {
 		System.out.println("enter the numbers:");
 		N=sc.nextInt();
 		K=sc.nextInt();
-		while(count!=100)
+		while(N!=0)
 		{
-			temp=temp*K;
-			if(temp==N)
+			if(N%K==1)
 			{
-				System.out.println("yes");
-				break;
+				count++;
 			}
-			count++;
+			N/=K;
 		}
-		if(count==100)
+		if(count==1)
+		{
+			System.out.println("yes");
+		}
+		else
 		{
 			System.out.println("no");
 		}
