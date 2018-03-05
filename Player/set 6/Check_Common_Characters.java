@@ -6,7 +6,7 @@ public class Common_Char {
 
 	public static void main(String[] args) {
 		String str1,str2;
-		int i,flag=0;
+		int i,j,flag=0;
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter the strings:");
 		str1=sc.nextLine();
@@ -15,9 +15,12 @@ public class Common_Char {
 		char[] array2=str2.toCharArray();
 		for(i=0;i<str1.length();i++)
 		{
-			if(array1[i]==array2[i])
+			for(j=0;j<str2.length();j++)
+			{
+			if(array1[i]==array2[j])
 			{
 				flag=1;
+			}
 			}
 		}
 		if(flag==1)
