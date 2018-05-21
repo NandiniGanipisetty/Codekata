@@ -1,5 +1,6 @@
 package kth_closest_element;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Kth_Closest_Element {
@@ -15,6 +16,7 @@ public class Kth_Closest_Element {
 		{
 			array[i]=sc.nextInt();
 		}
+		Arrays.sort(array);
 		ClosestElement(array,C,array.length,K);
 
 	}
