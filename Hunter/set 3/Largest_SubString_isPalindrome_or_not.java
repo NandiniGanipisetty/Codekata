@@ -8,7 +8,10 @@ public class SubString {
 		String N;
 		Scanner sc=new Scanner(System.in);
 		N=sc.nextLine();
-		System.out.println(longestPalindrome(N));
+		if(N.length()>=1&&N.length()<=1000)
+		{
+			System.out.println(longestPalindrome(N));
+		}
 	}
 	static String longestPalindrome(String str)
 	{
